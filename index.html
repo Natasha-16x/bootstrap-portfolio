@@ -17,7 +17,7 @@
     <!-- Nav menu at top:
     include links that are applicable to your portfolio and navigate to the appropriate section-->
     
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: cadetblue;">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: pink">
         <!-- changed start of navbar to Bootstrap portfolio-->
         <a class="navbar-brand" href="#">Bootstrap Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,10 +26,10 @@
         <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">About Me <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Work</a>
-            <a class="nav-item nav-link" href="#">Skills</a>
-            <a class="nav-item nav-link" href="#">Contact Me</a>
+            <a class="nav-item nav-link active" href="#aboutMe">About Me <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#workSection">Work</a>
+            <a class="nav-item nav-link" href="#learntSkills">Skills</a>
+            <a class="nav-item nav-link" href="#contact">Contact Me</a>
         </div>
           </div>
         </div>
@@ -40,13 +40,14 @@
     <!-- Hero Section (Jumbotron)
     picture, your name, and some extra info -->
     <div class="container-fluid">
-        <div class="jumbotron">
+        <div class="jumbotron" id="aboutMe">
             <h1 class="display-4">Natasha Okparavero</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <p class="lead">This is a porfolio of my work during my time in the front-end web developer course.</p>
             <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p>This portfolio has been made using bootstrap 4 components</p>
             <p class="lead">
-              <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                <!-- added button to jumbotron to take you to work section-->
+              <a class="btn btn-primary btn-lg" href="#workSection" role="button" style="background-color:black">Click To See My Work</a>
             </p>
           </div>
     </div>
@@ -57,81 +58,151 @@
 Add a description for a breif overview of work -->
 
 <div class="container-fluid content">
-    <h2 class="sectionHeading">My Work</h2>
+    <h2 class="sectionHeading" id="workSection">My Work</h2>
     <div class="row MyWork">
 
         <!-- Card 1 -->
-        <div class="cardContainer col-sm-12 col-md-4 col-lg-4.">
+        <div class="cardContainer col-sm-12 col-md-12 col-lg-12">
             <div class="card">
               <img class="card-img-top" src="./images/jeff-nissen-zcPY0t-MQ4g-unsplash.jpg" alt="purple">
               <div class="card-body">
                 <h5 class="card-title">Horiseon Code Refactor</h5>
-                    <p class="card-text">This is a project which shows the refactor of code. The improvements made the webiste more accesible to users</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <p class="card-text">This is a project which shows the refactor of code. The improvements made the webiste more accesible to users.</p>
+                    <!-- added link to take user to horiseon code refactor home page -->
+                    <a href="https://natasha-16x.github.io/horiseon-code-refactor/" class="btn btn-primary">Take me there</a>
                   </div>
                 </div>
               </div>
+
+              <div class="container-fluid content"></div>
+              <div class="row"></div>
   <!-- Card 2-->
-  <div class="cardContainer col-sm-12 col-md-4 col-lg-4.">
+  <div class="cardContainer col-sm-12 col-md-6 col-lg-6">
     <div class="card">
       <img class="card-img-top" src="./images/02-portfolio-4.jpg" alt="purple">
       <div class="card-body">
         <h5 class="card-title">Surf Report</h5>
-        <p class="card-text">blah blah blah blah </p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <p class="card-text">This is a project</p>
+        <a href="#" class="btn btn-primary">Take me there</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="cardContainer col-sm-12 col-md-6 col-lg-6">
+    <div class="card">
+      <img class="card-img-top" src="./images/02-portfolio-1.jpg" alt="purple">
+      <div class="card-body">
+        <h5 class="card-title">LED Wall</h5>
+        <p class="card-text">This is a project</p>
+        <a href="#" class="btn btn-primary">Take me there</a>
       </div>
     </div>
   </div>
 
   <div class="container-fluid content">
     <div class="row MyWorks">
-  <!-- Card 3 -->
-  <div class="cardContainer col-sm-12 col-md-4 col-lg-4.">
-    <div class="card">
-      <img class="card-img-top" src="./images/02-portfolio-1.jpg" alt="purple">
-      <div class="card-body">
-        <h5 class="card-title">LED Wall</h5>
-        <p class="card-text">blah blah blah blah</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-
   <!-- Card 4 -->
-  <div class="cardContainer col-sm-12 col-md-4 col-lg-4.">
+  <div class="cardContainer col-sm-12 col-md-6 col-lg-6">
     <div class="card">
       <img class="card-img-top" src="./images/02-portfolio-2.jpg" alt="purple">
       <div class="card-body">
         <h5 class="card-title">Calculator</h5>
-        <p class="card-text">blah blah blah blah</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <p class="card-text">This is a project</p>
+        <a href="#" class="btn btn-primary">Take me there</a>
       </div>
     </div>
   </div>
   <!--card 5 -->
-  <div class="cardContainer col-sm-12 col-md-4 col-lg-4.">
+  <div class="cardContainer col-sm-12 col-md-6 col-lg-6">
     <div class="card">
       <img class="card-img-top" src="./images/liana-mikah-4RTAF3Z-0zM-unsplash.jpg" alt="purple">
       <div class="card-body">
         <h5 class="card-title">Pastel Puzzles</h5>
-        <p class="card-text">blah blah blah blah</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <p class="card-text">This is a project</p>
+        <a href="#" class="btn btn-primary">Take me there</a>
       </div>
     </div>
   </div>
 
-<!--Skills section - list skills learnt in bootcamp -->
+  
+<!-- skills section-->
 
-<section class="page-section-skills">
-    <h3>My Skills</h3>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-    </ul>
-</section>
+<div class="container-fluid content">
+    <h2 class="sectionHeading" id="learntSkills">My Skills</h2>
+
+    <div class="row skillsSection">
+        <div class="skill">
+        </div>
+        <div class="col-3">
+          <img class="imageContainer" src="./images/html image.png" alt="html logo">
+        </div>
+        <div class="col-8">
+          <h3>HTML</h3>
+          <p>
+            Hypertext Markup Language provides structure to a webpage. <br>
+            It determines what elements and conent are displayed on a webpage.
+          </p>
+        </div>
+      </div>
+
+      <div class="row skillsSection">
+        <div class="skill">
+        </div>
+        <div class="col-3">
+          <img class="imageContainer" src="./images/CSS Image1.jpg" alt="CSS logo">
+        </div>
+        <div class="col-8">
+          <h3>CSS</h3>
+          <p>
+            Cascading Style Sheet adds style to the webpage. <br>
+            It is used to format content
+          </p>
+        </div>
+      </div>
+
+      <div class="row skillsSection">
+        <div class="skill">
+        </div>
+        <div class="col-3">
+          <img class="imageContainer" src="./images/JavaScript-logo.png" alt="javaScript logo">
+        </div>
+        <div class="col-8">
+          <h3>JavaScript</h3>
+          <p>
+            JavaScript creates dynamic web applications. <br>
+            This enables the website to be more interactive for users.</p>
+        </div>
+      </div>
+
+      <div class="row skillsSection">
+        <div class="skill">
+        </div>
+        <div class="col-3">
+          <img class="imageContainer" src="./images/bootstrap-stack-e1530246058846.png" alt="bootstrap logo">
+        </div>
+        <div class="col-8">
+          <h3>Bootstrap</h3>
+          <p>
+            Bootstrap is a free front-end framework for faster and easier web development. <br>
+            It gives you the ability to create responsive web designs.
+          </p>
+        </div>
+      </div>
+
+
 
 
 <!-- a footer - contact section; hyperlinks should have a hover effect and display a box shadow  -->
-
+<footer class="page-section-contact" id="contact">
+    <h3>Contact Me</h3>
+    <nav>
+      <ul>
+        <li><a href="#email">email: tasha.okparavero@yahoo.com</a></li>
+        <li><a href="#phonenumber">contact number: 07720227965</a></li>
+        <li><a href="https://github.com/Natasha-16x">GitHub</a></li>
+        <li><a href="#linkedin">LinkedIn</a></li>
+      </ul>
+    </nav>
+</footer>
 </body>

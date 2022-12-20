@@ -1,8 +1,25 @@
-.jumbotron {
-    margin-top: 20px;
-   
+body {
+    background-color: pink;
 }
 
+
+.nav-item:hover {
+    background-color: white;
+}
+
+.jumbotron {
+    margin-top: 20px;
+    background-color: pink;
+    color: black;
+}
+
+
+.jumbotron h1 {
+    text-align: center;
+}
+.jumbotron p {
+    text-align: center;
+}
 /* cards */
 
 .content {
@@ -10,7 +27,7 @@
 }
 
 .sectionHeading {
-    text-align: center;
+    text-align:left;
 }
 
 .myWork {
@@ -21,4 +38,39 @@
     text-align: center;
 }
 
+.imageContainer {
+    width: 150px;
+    height: 150px;
+}
 
+
+.skillsSection {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    
+  }
+
+  li {
+    display: inline-flex;
+    font-size: 34px;
+    padding: 10px 10px 10px 10px;
+  }
+
+  li a {
+    display: inline;
+    color: black;
+    text-align: center;
+    padding: 10px 15px ;
+    }
+
+    li a:hover {
+        background-color: white;
+        }
